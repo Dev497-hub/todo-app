@@ -10,7 +10,7 @@
   <groupId>com.example</groupId>  <!-- Your project group name -->
   <artifactId>todo-app</artifactId>  <!-- Your project artifact name -->
   <version>1.0-SNAPSHOT</version>  <!-- Version of the app -->
-  <packaging>jar</packaging>  <!-- Packaging type -->
+  <packaging>war</packaging>  <!-- Packaging type -->
 
   <!-- Project Description -->
   <name>Todo App</name>
