@@ -76,7 +76,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>3.4.2</version> <!-- Use the same version as your Spring Boot parent -->
                 <configuration>
-                    <mainClass>TodoAppApplication</mainClass> <!-- Replace with your main class -->
+                    <mainClass>com.todo.TodoAppApplication</mainClass> <!-- Replace with your main class -->
                     <packaging>war</packaging>
                 </configuration>
             </plugin>
