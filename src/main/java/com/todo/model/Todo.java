@@ -8,8 +8,26 @@ public class Todo {
 
     @Id
     private Long id;
-    private String task;
-    private Boolean completed;
+    private String description;
 
-    // Getters and Setters
+    // Constructor, getters, and setters
+    
+    public Todo() {}
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 }
+
