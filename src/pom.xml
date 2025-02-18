@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -15,7 +15,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>todo-app</name>
     <description>Demo project for Spring Boot</description>
-    
+
     <packaging>war</packaging> <!-- Changed from jar to war -->
 
     <properties>
@@ -60,26 +60,27 @@
     </dependencies>
 
     <build>
-        <build>
-    <plugins>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-war-plugin</artifactId>
-            <version>3.3.1</version>
-            <configuration>
-                <outputDirectory>${project.build.directory}</outputDirectory>
-            </configuration> <!-- This should be </configuration> -->
-        </plugin>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.1</version>
+                <configuration>
+                    <outputDirectory>${project.build.directory}</outputDirectory>
+                </configuration>
+            </plugin>
 
-        <!-- Add Spring Boot plugin to handle WAR packaging -->
-        <plugin>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-maven-plugin</artifactId>
-            <version>3.4.2</version> <!-- Use the same version as your Spring Boot parent -->
-            <configuration>
-                <mainClass>com.todo.YourApplication</mainClass> <!-- Replace with your main class -->
-                <packaging>war</packaging>
-            </configuration>
-        </plugin>
-    </plugins>
-</build>
+            <!-- Add Spring Boot plugin to handle WAR packaging -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>3.4.2</version> <!-- Use the same version as your Spring Boot parent -->
+                <configuration>
+                    <mainClass>TodoAppApplication</mainClass> <!-- Replace with your main class -->
+                    <packaging>war</packaging>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
